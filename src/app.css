@@ -1,4 +1,6 @@
 @import 'tailwindcss';
+@import './lib/fonts/tusker.css';
+@import './lib/fonts/delight.css';
 
 @theme {
   --color-primary-50: #e2efff;
@@ -43,8 +45,8 @@
   --color-warning: #ffb703;
   --color-error: #d62828;
   --color-dark-text: #faf7ea;
-  --font-family-tusker: 'Tusker', sans-serif;
-  --font-family-delight: 'Delight', sans-serif;
+  --font-tusker: 'Tusker', sans-serif;
+  --font-delight: 'Delight', sans-serif;
 }
 
 @layer base {
