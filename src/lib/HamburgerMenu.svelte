@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { AlignJustify, ArrowBigUp } from "@lucide/svelte";
   import { onMount } from "svelte";
   import { fade, fly, scale } from "svelte/transition";
