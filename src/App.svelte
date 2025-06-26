@@ -1,6 +1,7 @@
 <script lang="ts">
+  import Nav from './lib/NavBar.svelte';
 </script>
 
 <main>
-  <h1>Welcome to Svelte + Vite</h1>
+  <Nav />
 </main>

@@ -1,7 +1,11 @@
-<nav>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/contact">Contact</a></li>
-  </ul>
+<script lang="ts">
+  import logo from '../assets/images/logo.webp';
+</script>
+
+<nav class="flex justify-center items-start">
+  <div class="flex bg-main-neutral py-4 px-6 w-full h-21 rounded-b-[40px] sm:min-w-[600px] sm:w-1/2">
+    <a href="/" class="flex items-center">
+      <img src={logo} alt="" class="w-48 sm:w-auto sm:max-w-64 object-contain" /> 
+    </a>
+  </div>
 </nav>

@@ -4,9 +4,9 @@
     <style>
       .cls-1 {
         fill: #f77f00;
-        font-family: Delight-ExtraBold, Delight;
+        font-family: Delight, 'sans-serif';
         font-size: 117.38px;
-        font-weight: 700;
+        font-weight: 900;
       }
 
       .cls-2 {
