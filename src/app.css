@@ -1,6 +1,6 @@
 @import 'tailwindcss';
-@import './lib/fonts/tusker.css';
-@import './lib/fonts/delight.css';
+@import './assets/fonts/tusker.css';
+@import './assets/fonts/delight.css';
 
 @theme {
   --color-primary-50: #e2efff;
