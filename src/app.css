@@ -50,4 +50,10 @@
 }
 
 @layer base {
+  a {
+    @apply transition-colors duration-300 ease-in-out;
+  }
+  a:hover {
+    @apply text-secondary-700;
+  }
 }
