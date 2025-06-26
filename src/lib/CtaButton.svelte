@@ -27,7 +27,7 @@
   );
 </script>
 
-<a {href} class={_class} {target}>
+<a {href} class={_class} {target} aria-label="Contact Us">
   <p class="mt-1">Contact Us!</p>
   <CircleArrowRight size="2rem" color="currentColor" />
 </a>
