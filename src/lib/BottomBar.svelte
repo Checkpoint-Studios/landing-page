@@ -5,7 +5,7 @@
 
 <nav class="flex w-full px-8 lg:p-0 lg:justify-center">
   <div
-    class="hidden lg:flex items-center justify-between 2xl:max-w-2/5 p-4 bg-primary-500/10 rounded-full gap-x-4 backdrop-blur-md shadow-lg"
+    class="hidden lg:flex items-center justify-between 2xl:max-w-2/5 p-4 bg-primary-500/30 rounded-full gap-x-4 backdrop-blur-md shadow-lg"
   >
     <ul class="flex font-tusker font-semibold text-2xl gap-x-4">
       <li><a href="#services">Servicios</a></li>
