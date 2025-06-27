@@ -17,7 +17,7 @@
   let textOrder = $derived(type === "image-first" ? "order-2" : "order-1");
 </script>
 
-<div class="grid grid-cols-1 xl:w-118 p-4 gap-8">
+<div class="grid grid-cols-1 2xl:w-118 p-4 gap-8 max-w-118">
   <h3 class="text-main-neutral">{title}</h3>
   {#if type !== "text-only"}
     <img src={img} class="object-contain w-max {imageOrder}" alt="" />

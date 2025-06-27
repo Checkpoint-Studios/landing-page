@@ -4,12 +4,14 @@
   import Hero from "./lib/Hero.svelte";
   import Services from "./lib/Services.svelte";
   import Footer from "./lib/Footer.svelte";
+  import Process from "./lib/Process.svelte";
 </script>
 
 <main>
   <Nav />
   <Hero />
   <Services />
+  <Process />
   <div class="w-screen fixed z-50 bottom-6">
     <BottomBar />
   </div>
