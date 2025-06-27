@@ -5,6 +5,7 @@
   import Services from "./lib/Services.svelte";
   import Footer from "./lib/Footer.svelte";
   import Process from "./lib/Process.svelte";
+  import Projects from "./lib/Projects.svelte";
 </script>
 
 <main>
@@ -12,6 +13,7 @@
   <Hero />
   <Services />
   <Process />
+  <Projects />
   <div class="w-screen fixed z-50 bottom-6">
     <BottomBar />
   </div>
