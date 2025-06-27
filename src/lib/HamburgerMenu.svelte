@@ -25,7 +25,7 @@
 
 <div
   id="hamburger-menu"
-  class="flex items-center justify-center w-12 h-12 bg-white/10 rounded-full backdrop-blur-md shadow-lg"
+  class="flex items-center justify-center w-12 h-12 bg-white/10 rounded-full backdrop-blur-md shadow-lg border-main-secondary border-2"
 >
   <button
     type="button"
@@ -46,7 +46,7 @@
       out:fly={{ y: 10, duration: 200, opacity: 0 }}
     >
       <div
-        class="flex flex-col py-4 items-center justify-center w-[50vw] bg-primary-950/95 backdrop-blur-lg shadow-lg rounded-lg"
+        class="flex flex-col py-4 items-center justify-center w-[50vw] bg-surface border-4 border-main-secondary backdrop-blur-lg shadow-lg rounded-lg"
         in:scale={{ duration: 250, start: 0.95 }}
         out:scale={{ duration: 200, start: 0.95 }}
       >
@@ -59,7 +59,7 @@
             >
               <a
                 href={href}
-                class="inline-block w-full font-tusker font-semibold hover:bg-neutral-300/10 py-2 transition-colors duration-200 rounded"
+                class="inline-block w-full font-tusker font-semibold hover:bg-main-secondary hover:text-main-primary py-2 transition-colors duration-200 rounded"
                 onclick={() => (isOpen = false)}
               >
                 {label}
