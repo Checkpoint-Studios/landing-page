@@ -6,6 +6,7 @@
   import Footer from "./lib/Footer.svelte";
   import Process from "./lib/Process.svelte";
   import Projects from "./lib/Projects.svelte";
+  import About from "./lib/About.svelte";
 </script>
 
 <main>
@@ -14,6 +15,7 @@
   <Services />
   <Process />
   <Projects />
+  <About />
   <div class="w-screen fixed z-50 bottom-6">
     <BottomBar />
   </div>
