@@ -7,6 +7,7 @@
   import Process from "./lib/Process.svelte";
   import Projects from "./lib/Projects.svelte";
   import About from "./lib/About.svelte";
+  import Contact from "./lib/Contact.svelte";
 </script>
 
 <main>
@@ -16,6 +17,7 @@
   <Process />
   <Projects />
   <About />
+  <Contact />
   <div class="w-screen fixed z-50 bottom-6">
     <BottomBar />
   </div>
