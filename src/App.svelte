@@ -10,7 +10,7 @@
   import Contact from "./lib/Contact.svelte";
 </script>
 
-<main>
+<main id="home">
   <Nav />
   <Hero />
   <Services />
