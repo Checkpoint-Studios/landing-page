@@ -3,7 +3,7 @@
   import FormSubmitButton from "./ui/FormSubmitButton.svelte";
 </script>
 
-<section id="contact" class="mx-8 md:mx-24 xl:mx-50">
+<section id="contact" class="mx-8 md:mx-24 xl:mx-50 my-20 sm:my-40">
   <SectionTitle>Get in touch</SectionTitle>
   <p class="inline-block text-main-neutral text-lg lg:w-1/2 my-4">
     We would love to hear from you! Whether you have a question, want to start a
@@ -13,7 +13,7 @@
     <form
       action="https://formspree.io/f/your-form-id"
       method="POST"
-      class="flex flex-col gap-4 max-w-md mx-auto my-8 border-4 border-main-secondary rounded-lg p-16"
+      class="flex flex-col gap-4 max-w-md mx-auto my-8 border-4 border-main-secondary rounded-lg p-6 sm:p-16"
     >
     <div>
       <label
