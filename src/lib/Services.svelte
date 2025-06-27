@@ -6,7 +6,7 @@
 <section id="services" class="mx-8 sm:mx-24 xl:mx-50 mt-30">
   <SectionTitle>What we can help you with</SectionTitle>
   <div class="flex justify-center">
-    <div class="grid sm:grid-cols-2 gap-8 xl:gap-16 py-8 w-fit">
+    <div class="grid items-end sm:grid-cols-2 gap-8 xl:gap-16 py-8 w-fit">
       <Card title="Web Development" type="text-first">
         <p>
           We create websites that are not only visually appealing but also

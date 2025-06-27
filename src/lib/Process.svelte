@@ -6,7 +6,7 @@
 <section id="process" class="mx-8 sm:mx-24 xl:mx-50 mt-20 sm:mt-40">
   <SectionTitle orientation="right">Making it happen</SectionTitle>
   <div class="flex justify-center">
-    <div class="grid lg:grid-cols-3 lg:gap-2 xl:gap-8 2xl:gap-16 py-8 xl:w-fit">
+    <div class="grid items-end lg:grid-cols-3 lg:gap-2 xl:gap-8 2xl:gap-16 py-8 xl:w-fit">
       <Card title="Discovery" type="text-first">
         <p>
           We start by understanding your needs and goals, ensuring we have a
