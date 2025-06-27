@@ -12,7 +12,7 @@
       <a href="/terms-and-conditions" target="_blank">Terms & Conditions</a>
       <div class="flex items-center gap-x-4">
         <SocialButton
-          href="https://www.instagram.com/CheckpointStudios"
+          href="https://www.instagram.com/check.point.studios"
           icon="instagram"
         />
         <SocialButton
