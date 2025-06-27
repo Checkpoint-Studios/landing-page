@@ -4,7 +4,7 @@
   import UserCard from "./ui/UserCard.svelte";
 </script>
 
-<section id="about" class="mx-8 sm:mx-24 xl:mx-50 mt-30">
+<section id="about" class="mx-8 sm:mx-24 xl:mx-50 mt-20 sm:mt-40">
   <SectionTitle orientation="right">About Us</SectionTitle>
   <div class="flex justify-center">
     <div class="grid lg:grid-cols-3 lg:gap-2 xl:gap-8 2xl:gap-16 py-8 xl:w-fit">

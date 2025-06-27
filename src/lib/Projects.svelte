@@ -2,7 +2,7 @@
   import SectionTitle from "./ui/SectionTitle.svelte";
 </script>
 
-<section id="projects" class="mx-8 sm:mx-24 xl:mx-50">
+<section id="projects" class="mx-8 sm:mx-24 xl:mx-50 mt-20 sm:mt-40">
   <SectionTitle>A delicious taster</SectionTitle>
   <div class="grid grid-cols-2 sm:grid-cols-4 grid-rows-3 gap-6 w-full h-[60vh] sm:h-[75vh] lg:h-[90vh] 2xl:h-[150vh] my-8">
     <div class="bg-neutral-200 sm:col-start-1 sm:col-span-2 sm:row-start-1 sm:row-span-2"></div>
