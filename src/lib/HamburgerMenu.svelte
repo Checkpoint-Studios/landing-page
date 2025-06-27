@@ -30,7 +30,7 @@
   <button
     type="button"
     class="w-full h-full flex items-center justify-center transition-transform duration-200 hover:scale-105"
-    on:click={toggleMenu}
+    onclick={toggleMenu}
   >
     {#if isOpen}
         <ArrowBigUp />
@@ -60,7 +60,7 @@
               <a
                 href={href}
                 class="inline-block w-full font-tusker font-semibold hover:bg-neutral-300/10 py-2 transition-colors duration-200 rounded"
-                on:click={() => (isOpen = false)}
+                onclick={() => (isOpen = false)}
               >
                 {label}
               </a>
