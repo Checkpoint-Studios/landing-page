@@ -7,7 +7,7 @@
     class="grid flex-col sm:grid sm:grid-rows-4 sm:grid-cols-2 grid-rows-4 w-2/3 gap-y-8 md:gap-x-8 xl:gap-x-32 2xl:gap-x-64"
   >
     <h1
-      class="font-tusker font-bold text-main-secondary text-[36px] xs:text-[42px] sm:text-3xl lg:text-[3rem] xl:text-[3.25rem] 2xl:text-[4rem] text-center sm:text-right sm:col-start-1 row-span-4 sm:row-span-2"
+      class="font-tusker font-bold text-main-secondary text-[36px] xs:text-[42px] sm:text-[2rem] lg:text-[3rem] xl:text-[3.25rem] 2xl:text-[4rem] text-center sm:text-right sm:col-start-1 row-span-4 sm:row-span-2"
     >
       Big ass text about how great is our company
     </h1>
