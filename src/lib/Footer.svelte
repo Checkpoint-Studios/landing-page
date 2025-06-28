@@ -1,6 +1,9 @@
 <script lang="ts">
   import SocialButton from "./ui/SocialButton.svelte";
+  import TermsAndConditions from "./TermsAndConditions.svelte";
   import logo from "../assets/images/logo-dark.webp";
+  import { openModal } from "./stores/terms-modal.svelte";
+
   let currentYear = new Date().getFullYear();
 </script>
 
@@ -15,7 +18,9 @@
       <div
         class="flex flex-col sm:flex-row items-center gap-x-8 gap-y-4 xl:gap-y-0"
       >
-        <a href="/terms-and-conditions" target="_blank">Términos y Condiciones</a>
+        <button type="button" onclick={openModal}
+          >Términos y Condiciones</button
+        >
         <div class="flex items-center gap-x-4">
           <SocialButton
             href="https://www.instagram.com/check.point.studios"
@@ -27,7 +32,10 @@
           />
         </div>
       </div>
-      <p class="text-secondary-700 text-xs">© Checkpoint Studios {currentYear}</p>
+      <p class="text-secondary-700 text-xs">
+        © Checkpoint Studios {currentYear}
+      </p>
     </div>
   </div>
+  <TermsAndConditions />
 </footer>

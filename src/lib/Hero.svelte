@@ -14,7 +14,7 @@
     <div
       class="sm:col-start-1 sm:row-start-3 flex justify-center sm:justify-end"
     >
-      <CtaButton color="secondary" />
+      <CtaButton href="#contact" color="secondary" />
     </div>
     <div class="sm:row-start-3 flex justify-center sm:justify-end">
       <h2

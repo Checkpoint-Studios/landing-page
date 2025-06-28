@@ -8,6 +8,7 @@
   import Projects from "./lib/Projects.svelte";
   import About from "./lib/About.svelte";
   import Contact from "./lib/Contact.svelte";
+  import TermsAndConditions from "./lib/TermsAndConditions.svelte";
 </script>
 
 <main id="home">
