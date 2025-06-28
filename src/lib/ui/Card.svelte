@@ -18,7 +18,7 @@
 </script>
 
 <div class="grid grid-cols-1 2xl:w-118 p-4 gap-8 max-w-118">
-  <h3 class="text-main-neutral">{title}</h3>
+  <h2 class="text-main-neutral">{title}</h2>
   {#if type !== "text-only"}
     <img src={img} class="object-contain w-max {imageOrder}" alt="" />
   {/if}

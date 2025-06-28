@@ -8,7 +8,7 @@
   <div
     class="flex flex-col xl:flex-row items-center xl:justify-between sm:mx-50 py-16 gap-y-4 xl:gap-y-0"
   >
-    <a href="#home">
+    <a href="#home" aria-label="Inicio">
       <img src={logo} alt="" class="h-12 xl:h-18" />
     </a>
     <div class="flex flex-col gap-y-8 items-center xl:items-end">

@@ -13,14 +13,14 @@
   } = $props();
 
   let iconMap = {
-    linkedin: LinkedinIcon,
-    instagram: InstagramIcon,
+    linkedin: { component: LinkedinIcon, name: "LinkedIn" },
+    instagram: { component: InstagramIcon, name: "Instagram" },
   };
 
-  let selectedIcon = { component: iconMap[icon] || LinkedinIcon };
+  let selectedIcon = iconMap[icon] || iconMap.linkedin;
 </script>
 
-<a href={href} target="_blank" class="flex items-center justify-center rounded-full bg-primary-500/30 p-2">
+<a href={href} target="_blank" class="flex items-center justify-center rounded-full bg-primary-500/30 p-2" aria-label={selectedIcon.name}>
   <selectedIcon.component {size} class="text-main-secondary"/>
 </a>
 
