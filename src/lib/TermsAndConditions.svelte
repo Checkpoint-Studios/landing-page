@@ -68,7 +68,7 @@
         <li>
           <h2 class="text-base">Ley aplicable</h2>
           <p>
-            términos se rigen por las leyes vigentes en los Estados Unidos
+            Estos términos se rigen por las leyes vigentes en los Estados Unidos
             Mexicanos. Cualquier disputa será resuelta en los tribunales
             competentes de Puebla, México.
           </p>
