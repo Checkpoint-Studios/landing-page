@@ -26,6 +26,6 @@
 </script>
 
 <button type="submit" class={_class}> 
-  <p class="mt-1">Contact Us!</p>
+  <p class="mt-1">¡Conectar!</p>
   <CircleArrowRight size="2rem" color="currentColor" />
 </button>

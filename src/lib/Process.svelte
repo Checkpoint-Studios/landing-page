@@ -4,25 +4,30 @@
 </script>
 
 <section id="process" class="mx-8 sm:mx-24 xl:mx-50 mt-20 sm:mt-40">
-  <SectionTitle orientation="right">Making it happen</SectionTitle>
+  <SectionTitle orientation="right">Nuestro modo cooperativo</SectionTitle>
   <div class="flex justify-center">
-    <div class="grid items-end lg:grid-cols-3 lg:gap-2 xl:gap-8 2xl:gap-16 py-8 xl:w-fit">
-      <Card title="Discovery" type="text-first">
+    <div
+      class="grid items-end lg:grid-cols-3 lg:gap-2 xl:gap-8 2xl:gap-16 py-8 xl:w-fit"
+    >
+      <Card title=" La Reunión Inicial" type="text-first">
         <p>
-          We start by understanding your needs and goals, ensuring we have a
-          clear vision for the project.
+          Nos sentamos contigo para comprender a fondo tu misión. Evaluamos tus
+          necesidades y hacia dónde quieres llevar tu proyecto. Es el punto de
+          partida clave para planear tu victoria.
         </p>
       </Card>
-      <Card title="Design" type="text-first">
+      <Card title="El Plan de Juego" type="text-first">
         <p>
-          Our design team creates wireframes and prototypes to visualize the
-          project before development begins.
+          Juntos, diseñamos la estrategia. Establecemos los objetivos, los
+          checkpoints y las expectativas claras. Así, todos sabemos qué esperar
+          en cada fase de la misión.
         </p>
       </Card>
-      <Card title="Execution" type="text-first">
+      <Card title="Ejecución y Feedback" type="text-first">
         <p>
-          We bring the designs to life with our development team, ensuring
-          quality and functionality at every step.
+          Trabajamos en iteraciones rápidas, entregando avances y recibiendo tu
+          feedback constante. Nos enfocamos en la calidad para asegurar que cada
+          fase sea una victoria
         </p>
       </Card>
     </div>

@@ -22,5 +22,5 @@
   {#if type !== "text-only"}
     <img src={img} class="object-contain w-max {imageOrder}" alt="" />
   {/if}
-  <div class={textOrder}>{@render children()}</div>
+  <div class="xl:text-xl {textOrder}">{@render children()}</div>
 </div>

@@ -4,31 +4,33 @@
 </script>
 
 <section id="services" class="mx-8 sm:mx-24 xl:mx-50 mt-30">
-  <SectionTitle>What we can help you with</SectionTitle>
+  <SectionTitle>Lo que sabemos hacer con estilo</SectionTitle>
   <div class="flex justify-center">
     <div class="grid items-end sm:grid-cols-2 gap-8 xl:gap-16 py-8 w-fit">
-      <Card title="Web Development" type="text-first">
+      <Card title="01 Diseño Gráfico" type="text-first">
         <p>
-          We create websites that are not only visually appealing but also
-          functional and user-friendly.
+          ¿Necesitas que tu marca destaque en cada pantalla? Desde branding que
+          te hace un ícono hasta posts virales para redes, creamos visuales que
+          son pura victoria
         </p>
       </Card>
-      <Card title="Mobile Development" type="text-first">
+      <Card title="02 Video & Motion Graphics" type="text-first">
         <p>
-          Our mobile applications are designed to provide a seamless user
-          experience across all devices.
+          Con edición de video y motion graphics 2D, convertimos tus ideas en
+          narrativas dinámicas que capturan la atención al instante
         </p>
       </Card>
-      <Card title="UI/UX Design" type="text-first">
+      <Card title="03 Marketing Digital" type="text-first">
         <p>
-          We focus on creating intuitive and engaging user interfaces that
-          enhance the overall user experience.
+          Diseñamos tu estrategia completa, planeamos tu contenido y gestionamos
+          tus campañas de ads para que domines el juego online
         </p>
       </Card>
-      <Card title="Digital Marketing" type="text-first">
+      <Card title="04 Desarrollo Web" type="text-first">
         <p>
-          Our digital marketing strategies are tailored to help you reach your
-          target audience effectively.
+          Desde landing pages hasta e-commerces listos para la batalla,
+          construimos tu fortaleza digital. Usamos código a medida o plataformas
+          populares
         </p>
       </Card>
     </div>

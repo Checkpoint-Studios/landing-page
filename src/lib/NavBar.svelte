@@ -14,7 +14,7 @@
 
 <nav class="flex justify-center items-start">
   <div
-    class="flex justify-between bg-main-neutral py-4 px-6 w-full h-21 rounded-b-[40px] sm:min-w-[600px] sm:w-1/2"
+    class="flex justify-center md:justify-between bg-main-neutral py-4 px-6 w-full h-21 rounded-b-[40px] sm:min-w-[600px] sm:w-1/2"
   >
     <a href="/" class="flex items-center" aria-label="Home">
       {#await preload(logo) then logo}

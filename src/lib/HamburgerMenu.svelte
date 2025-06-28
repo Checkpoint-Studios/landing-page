@@ -46,7 +46,7 @@
       out:fly={{ y: 10, duration: 200, opacity: 0 }}
     >
       <div
-        class="flex flex-col py-4 items-center justify-center w-[50vw] bg-surface border-4 border-main-secondary backdrop-blur-lg shadow-lg rounded-lg"
+        class="flex flex-col py-4 items-center justify-center w-[80vw] sm:w-[50vw] bg-surface border-4 border-main-secondary backdrop-blur-lg shadow-lg rounded-lg"
         in:scale={{ duration: 250, start: 0.95 }}
         out:scale={{ duration: 200, start: 0.95 }}
       >
