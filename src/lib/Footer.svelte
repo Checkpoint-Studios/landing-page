@@ -15,7 +15,7 @@
       <div
         class="flex flex-col sm:flex-row items-center gap-x-8 gap-y-4 xl:gap-y-0"
       >
-        <a href="/terms-and-conditions" target="_blank">Terms & Conditions</a>
+        <a href="/terms-and-conditions" target="_blank">Términos y Condiciones</a>
         <div class="flex items-center gap-x-4">
           <SocialButton
             href="https://www.instagram.com/check.point.studios"

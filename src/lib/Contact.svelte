@@ -21,7 +21,7 @@
         <label
           for="name"
           class="font-tusker font-semibold text-main-secondary lg:text-[1.5rem] text-[1.25rem]"
-          >Name</label
+          >Nombre</label
         >
         <input
           type="text"
@@ -50,7 +50,7 @@
           for="message"
           class="font-tusker font-semibold text-main-secondary lg:text-[1.5rem] text-[1.25rem]"
         >
-          Message</label
+          Mensaje</label
         >
         <textarea
           id="message"
