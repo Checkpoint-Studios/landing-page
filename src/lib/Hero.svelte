@@ -1,5 +1,6 @@
 <script lang="ts">
   import CtaButton from "./CtaButton.svelte";
+  import mascotColored from "../assets/images/mascot-colored.webp";
 </script>
 
 <section id="hero" class="flex justify-center mt-20 sm:mt-[8rem]">
@@ -16,7 +17,16 @@
     >
       <CtaButton href="#contact" color="secondary" />
     </div>
-    <div class="sm:row-start-3 flex justify-center sm:justify-end">
+    <div
+      class="sm:col-start-2 sm:row-start-1 sm:row-span-2 flex justify-center sm:justify-start p-4"
+    >
+      <img
+        src={mascotColored}
+        alt="Hero"
+        class="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[400px]" 
+      />
+    </div>
+    <div class="sm:col-start-2 sm:row-start-3 flex justify-center">
       <h2
         class="inline-block w-3/4 text-main-neutral text-lg lg:text-2xl 2xl:text-[2rem] font-extrabold text-center sm:text-left"
       >
