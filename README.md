@@ -45,3 +45,37 @@ If you have state that's important to retain within a component, consider creati
 import { writable } from 'svelte/store'
 export default writable(0)
 ```
+
+## Deployment
+
+Pushes to `main` automatically deploy to the VPS via GitHub Actions.
+
+### Required secrets (Settings → Secrets → Actions)
+
+| Secret | Description |
+|---|---|
+| `TAILSCALE_OAUTH_CLIENT_ID` | Tailscale OAuth client ID. Create at tailscale.com/admin → Settings → OAuth clients. Must have `devices:write` scope and permission to tag `tag:ci`. |
+| `TAILSCALE_OAUTH_CLIENT_SECRET` | Secret paired with the OAuth client ID above. |
+| `VPS_SSH_KEY` | Private SSH key (PEM format) whose public key is in `~/.ssh/authorized_keys` on the VPS. Generate with: `ssh-keygen -t ed25519 -C "github-actions" -f deploy_key` |
+| `VPS_SSH_KNOWN_HOSTS` | Run `ssh-keyscan <VPS_TAILSCALE_HOST>` from a trusted machine and paste the output here. |
+| `VPS_USER` | SSH username on the VPS. |
+| `VPS_HOST` | Tailscale hostname or IP of the VPS. |
+
+### Required variables (Settings → Variables → Actions)
+
+| Variable | Example value | Description |
+|---|---|---|
+| `VPS_TARGET_DIR` | `~/apps/checkpoint-landing` | Absolute or home-relative path where `dist/` is deployed on the VPS. |
+
+### Tailscale ACL requirement
+
+Add `tag:ci` to your tailnet ACL and allow it to reach the VPS on port 22:
+
+```json
+"tagOwners": {
+  "tag:ci": ["autogroup:admin"]
+},
+"acls": [
+  { "action": "accept", "src": ["tag:ci"], "dst": ["<vps-tailscale-ip>:22"] }
+]
+```
