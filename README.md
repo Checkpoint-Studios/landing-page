@@ -50,18 +50,18 @@ export default writable(0)
 
 Pushes to `main` automatically deploy to the VPS via GitHub Actions.
 
-### Required secrets (Settings → Secrets → Actions)
+### Required secrets (Settings → Secrets and variables → Actions → Secrets tab)
 
 | Secret | Description |
 |---|---|
 | `TAILSCALE_OAUTH_CLIENT_ID` | Tailscale OAuth client ID. Create at tailscale.com/admin → Settings → OAuth clients. Must have `devices:write` scope and permission to tag `tag:ci`. |
 | `TAILSCALE_OAUTH_CLIENT_SECRET` | Secret paired with the OAuth client ID above. |
-| `VPS_SSH_KEY` | Private SSH key (PEM format) whose public key is in `~/.ssh/authorized_keys` on the VPS. Generate with: `ssh-keygen -t ed25519 -C "github-actions" -f deploy_key` |
-| `VPS_SSH_KNOWN_HOSTS` | Run `ssh-keyscan <VPS_TAILSCALE_HOST>` from a trusted machine and paste the output here. |
+| `VPS_SSH_KEY` | Private SSH key (ed25519). Generate a dedicated deploy key: run `ssh-keygen -t ed25519 -C "github-actions" -f /tmp/deploy_key` on your local machine. Copy the public key (`/tmp/deploy_key.pub`) to `~/.ssh/authorized_keys` on the VPS. Paste the private key contents (`/tmp/deploy_key`) as this secret. |
+| `VPS_SSH_KNOWN_HOSTS` | Run `ssh-keyscan $VPS_HOST` (using the same value you set for `VPS_HOST`) from a trusted machine that can reach the VPS over Tailscale. Paste the full output as this secret. |
 | `VPS_USER` | SSH username on the VPS. |
-| `VPS_HOST` | Tailscale hostname or IP of the VPS. |
+| `VPS_HOST` | Tailscale hostname or IP of the VPS (e.g. `my-server.tail1234.ts.net` or `100.x.y.z`). Find it in the Tailscale admin console or run `tailscale ip -4` on the VPS. |
 
-### Required variables (Settings → Variables → Actions)
+### Required variables (Settings → Secrets and variables → Actions → Variables tab)
 
 | Variable | Example value | Description |
 |---|---|---|
@@ -79,3 +79,5 @@ Add `tag:ci` to your tailnet ACL and allow it to reach the VPS on port 22:
   { "action": "accept", "src": ["tag:ci"], "dst": ["<vps-tailscale-ip>:22"] }
 ]
 ```
+
+Find your VPS Tailscale IP by running `tailscale ip -4` on the VPS, or look it up in the [Tailscale admin console](https://login.tailscale.com/admin/machines).
