@@ -1,0 +1,1 @@
+<div style="width:100%;height:4px;background-image:repeating-linear-gradient(to right,var(--color-main-secondary) 0px,var(--color-main-secondary) 8px,transparent 8px,transparent 16px);opacity:0.2;"></div>
