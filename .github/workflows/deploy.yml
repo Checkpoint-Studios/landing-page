@@ -9,6 +9,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    concurrency:
+      group: deploy-production
+      cancel-in-progress: true
+    permissions: {}
 
     steps:
       - name: Checkout
@@ -39,14 +43,18 @@ jobs:
       - name: Configure SSH
         run: |
           mkdir -p ~/.ssh
-          printf '%s\n' "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/id_rsa
+          printf '%s' "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           printf '%s\n' "${{ secrets.VPS_SSH_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
 
       - name: Deploy via rsync
+        env:
+          VPS_USER: ${{ secrets.VPS_USER }}
+          VPS_HOST: ${{ secrets.VPS_HOST }}
+          VPS_TARGET_DIR: ${{ vars.VPS_TARGET_DIR }}
         run: |
           rsync -avz --delete \
-            -e "ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=yes" \
+            -e "ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=yes -o BatchMode=yes" \
             dist/ \
-            ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:${{ vars.VPS_TARGET_DIR }}/
+            "$VPS_USER@$VPS_HOST:$VPS_TARGET_DIR/"
