@@ -1,33 +1,50 @@
 <script lang="ts">
-  import { CircleArrowRight } from "@lucide/svelte"; 
+  import { CircleArrowRight } from "@lucide/svelte";
+
   let {
-    href = "/",
+    href,
     target = "_self",
     color = "primary",
-    height = "sm",
+    size = "normal",
+    label = "¡Conectar!",
+    onclick,
   }: {
     href?: string;
     target?: string;
-    height?: "sm" | "md";
     color?: "primary" | "secondary";
+    size?: "normal" | "large";
+    label?: string;
+    onclick?: (e: MouseEvent) => void;
   } = $props();
 
   let textColor = $derived(
-    color === "primary" ? "text-main-primary hover:text-primary-600" : "text-main-secondary hover:text-secondary-600",
+    color === "primary"
+      ? "text-main-primary hover:text-primary-600"
+      : "text-main-secondary hover:text-secondary-600",
   );
   let borderColor = $derived(
-    color === "primary" ? "border-main-primary hover:border-primary-600" : "border-main-secondary hover:border-secondary-600",
+    color === "primary"
+      ? "border-main-primary hover:border-primary-600"
+      : "border-main-secondary hover:border-secondary-600",
   );
-  let heightClass = $derived(
-    height === "sm" ? "h-12" : "h-16",
-  );
+  let heightClass = $derived(size === "large" ? "h-16" : "h-12");
+  let fontClass = $derived(size === "large" ? "text-2xl" : "text-xl");
+  let paddingClass = $derived(size === "large" ? "px-8" : "px-5");
+  let iconSize = $derived(size === "large" ? "1.875rem" : "1.625rem");
 
   let _class = $derived(
-    `flex items-center justify-between w-61 px-5 py-3 rounded-full border-4 font-tusker font-semibold text-[1.5rem] ${textColor} ${borderColor} ${heightClass} transition-all duration-300`,
+    `flex items-center gap-3 ${paddingClass} py-2 rounded-full border-4 font-tusker font-semibold ${fontClass} ${textColor} ${borderColor} ${heightClass} transition-all duration-300 cursor-pointer bg-transparent`,
   );
 </script>
 
-<a {href} class={_class} {target} aria-label="Contact Us">
-  <p class="mt-1">¡Conectar!</p>
-  <CircleArrowRight size="2rem" color="currentColor" />
-</a>
+{#if href}
+  <a {href} class={_class} {target} aria-label={label}>
+    <span class="mt-1">{label}</span>
+    <CircleArrowRight size={iconSize} color="currentColor" />
+  </a>
+{:else}
+  <button type="button" class={_class} {onclick}>
+    <span class="mt-1">{label}</span>
+    <CircleArrowRight size={iconSize} color="currentColor" />
+  </button>
+{/if}
