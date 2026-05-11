@@ -13,11 +13,11 @@
   ];
 </script>
 
-<nav class="flex w-full px-8 xl:p-0 xl:justify-center">
+<nav class="flex w-full px-8 xl:p-0 xl:justify-center items-center">
   <div
-    class="hidden xl:flex items-center justify-between 2xl:max-w-2/5 p-3 bg-primary-700/70 rounded-full gap-x-4 backdrop-blur-lg shadow-lg border-4 border-main-secondary"
+    class="hidden xl:flex items-center justify-between 2xl:max-w-4/5 py-3 px-4 bg-primary-700/70 rounded-full gap-x-4 backdrop-blur-lg shadow-lg border-4 border-main-secondary"
   >
-    <ul class="flex font-tusker font-semibold text-lg gap-x-1">
+    <ul class="flex items-center font-tusker font-semibold text-lg gap-x-1">
       {#each items as item}
         <li>
           <a
@@ -26,8 +26,8 @@
           >{item.label}</a>
         </li>
       {/each}
+      <CtaButton href="#contact" color="secondary" />
     </ul>
-    <CtaButton href="#contact" color="secondary" />
   </div>
   <div class="xl:hidden">
     <HamburgerMenu />
