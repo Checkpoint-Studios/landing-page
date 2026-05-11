@@ -104,7 +104,9 @@
                 bind:value={msg} required placeholder="Cuéntanos sobre tu proyecto..."
                 onfocus={focusBorder} onblur={blurBorder}></textarea>
             </div>
+            <div class="w-1/2">
             <CtaButton size="large" color="secondary" label="¡Iniciar misión!" />
+            </div>
           </div>
         </form>
       {/if}
