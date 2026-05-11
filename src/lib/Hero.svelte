@@ -52,7 +52,7 @@
     >
       <span
         style="display:inline-block;font-family:var(--font-tusker);font-weight:600;font-size:clamp(0.75rem,1.2vw,0.95rem);letter-spacing:0.16em;text-transform:uppercase;color:var(--color-main-secondary);background:rgba(247,127,0,0.12);border:2px solid var(--color-main-secondary);border-radius:9999px;padding:4px 16px;"
-        >Puebla, MX — Est. 2024</span
+        >Puebla, MX — Est. 2025</span
       >
 
       <h1
